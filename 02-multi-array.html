@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+       p{
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 30px;
+      font-weight: 800;
+      text-align: center;
+      border-bottom:2px solid red ;
+      display: inline-block;
+   }
+    h2{
+       font-family: 'Courier New', Courier, monospace;
+       font-size: 30px;
+       text-align: center;
+    }
+
+    table{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+       font-size:20px;
+       border-color:5px red ;
+    }
+   </style>
+  <body>
+    <p>Javascript - MultiArray</p>
+
+    <script>
+      var hello = [
+        ["prithwi", 23, "engineer","male","b.tech"],
+        ["vishal", 24, "science","male", "b.sc"],
+        ["prince", 25, "entrprenuer","male","mba"],
+        ["vikas", 26, "profeSSor","male", "iit"],
+        ["DIPIKA", 27, "SDM","female", "ias"],
+        ["sanju", 28, "UPP","male", "POLICE"],
+        ["kundan", 29, "DM","male", "ias"]
+      ];
+
+       document.write("<table border = '2px'>");              //table frame
+      for (x = 0; x < 7; x++) {
+        document.write("<tr>");      //table row
+        for (y = 0; y < 5; y++) {
+          document.write("<td>" + hello[x][y] + "<td>");   //table data entry
+        }
+
+        document.write("</tr>");    // end table row
+      }
+      document.write("</table>");                            // end table frame
+    </script>
+  </body>
+</html>

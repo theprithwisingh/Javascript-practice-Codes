@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let result;
+    //string to number
+    result = Number('324');
+    document.write( typeof result + '</br>');
+
+    result = Number('324e-1')  
+    document.write(typeof result + '</br>'); // 32.4
+
+// boolean to number
+   result = Number(true);
+   document.write(typeof result + '</br>'); // 1
+
+   result = Number(false);
+   document.write(typeof result + '</br>'); // 0
+
+
+    let result1;
+    result1 = Number(null);
+    document.write(result1  + '</br>');  // 0
+
+    let result2 = Number(' ')
+    document.write(result2  + '</br>');  // 0
+
+let result3;
+result3 = parseInt('20.01'); //
+document.write(result3  + '</br>'); // 20
+
+result3 = parseFloat('20.01');
+document.write(result3  + '</br>'); // 20.01
+
+result3 = +'20.01';
+document.write(result3  + '</br>'); // 20.01
+
+result3 = Math.floor('20.01');
+document.write(result3  + '</br>'); // 20
+
+
+//other data types to string
+result5 = String(null);
+document.write(result5); // "null"
+document.write(typeof result5 + '</br>');
+
+result5 = String(undefined);
+document.write(result5); // "undefined"
+document.write(typeof result5 + '</br>');
+
+result5 = String(NaN);
+document.write(result5); // "NaN"
+document.write(typeof result5 + '</br>');
+
+result5 = String(true);
+document.write(result5); // "true"
+document.write(typeof result5 + '</br>');
+
+result5 = String(false);
+document.write(result5); // "false"
+document.write(typeof result5 + '</br>');
+
+// using toString()
+
+result5 = (324).toString();
+document.write(result5); // "324"
+document.write(result5);
+
+result5 = true.toString();
+document.write(result5); // "true"
+document.write(typeof result5 + '</br>');
+
+let result6;
+result6 = Boolean(''); //have not whitespace
+document.write(result6 + '</br>'); // false
+
+result7 = Boolean(' '); //have whitespace
+document.write(result7 + '</br>'); // true
+
+// program to convert date to number
+// create date
+const d1 = new Date();
+document.write(d1  + '</br>');
+document.write(typeof d1 + '</br>');
+
+// converting to number
+const result8 = d1.getTime();
+document.write(result8 );
+document.write(typeof result8 + '</br>');
+</script>
+</html>

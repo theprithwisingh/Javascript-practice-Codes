@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+       p{
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 30px;
+      font-weight: 800;
+      text-align: center;
+      border-bottom:2px solid red ;
+      display: inline-block;
+   }
+    h2{
+       font-family: 'Courier New', Courier, monospace;
+       font-size: 30px;
+       text-align: center;
+    }
+
+    table{
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+       font-size:20px;
+       border-color:5px red ;
+    }
+   </style>
+  <body>
+    <p>data-types</p>
+  </br>
+</body>
+<script>
+// numbers
+var num = 27;
+document.write((typeof num) + "</br>");
+
+//string
+var  strings = "PRITHWI";
+document.write((typeof strings) + "</br>" ) ;
+
+
+// Booleans
+let x = true;
+let y = false;
+
+document.write((typeof x ));
+document.write((typeof y));
+
+//object
+
+var obj = { fisrt: "ram",
+            sec: "siya" , 
+            third: "radha",
+            fouth:"krishna"
+}
+document.write((typeof obj)  + "</br>");
+
+// Array object
+
+var Arrays = ["RAM", "SYAM","LAXMAN","KRISHNA"];
+document.write((typeof Arrays)  + "</br>");
+
+//date 
+var ram   = new date("2022-03-25");
+ document.write((typeof ram) + "</br>");
+
+
+//function
+
+function myFun(){
+ var gb = "ram";
+}
+document.write((typeof myFun) + "</br>");
+
+// Primitive data typesdocdocument.write
+let name = "harry";
+document.write("My string is " + name);
+document.write("Data type is " + (typeof name));
+
+// Numbers
+let marks = 34.4;
+document.write("Data type is " + (typeof marks));
+
+// Boolean
+let isDriver = true;
+document.write("Data type is " + (typeof isDriver));
+
+// Null
+let nullVar = null;
+docdocument.write("Data type is " + (typeof nullVar));
+
+// Undefined
+let undef = undefined;
+docdocument.write("Data type is " + (typeof undef));
+
+// Reference Data Types
+
+// Arrays
+let myarr = [1, 2, 3, 4, false, "string"];
+docdocument.write("Data type is " + (typeof myarr));
+
+// Object Literals
+let stMarks = {
+    harry: 89,
+    Shubham: 36,
+    Rohan: 34
+}
+document.write( typeof stMarks);
+
+function findName() {
+    
+}
+document.write( typeof findName);
+
+let date = new Date();
+document.write( typeof date);
+
+
+</script>
+</html>

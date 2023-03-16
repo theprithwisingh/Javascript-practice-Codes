@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+   <style>
+   p{
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 30px;
+      font-weight: 800;
+      text-align: center;
+      border-bottom:2px solid red ;
+      display: inline-block;
+   }
+   h3{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 16px;
+   }
+   input{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 20px;
+   }
+
+   label{
+      font-size: 20px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+   }
+</style>
+<body>
+   <p> The nested for loop in JavaScript</p>
+   <h3> Enter number of rows and columns to create matrix</h3>
+   <form>
+      <label >Rows : </label>
+      <input type = "text" id = "rows"><br><br>
+      <label > Columns : </label>
+      <input type = "text" id = "cols"><br><br>
+      <input type = "button" onclick = "fun()" value ="Create Matrix">
+   </form>
+   <br><br>
+   <div id="result"></div>
+   <script>
+      function fun(){
+         var text = "";
+         var rows = document.getElementById('rows').value;
+         var cols = document.getElementById('cols').value;
+         for(let i = 0 ; i < rows; i++){
+            for(let j = 0 ; j < cols ; j++){
+               text += "   prithwi   "
+            }
+            text += "<br>";
+         }
+         document.getElementById("result").innerHTML = text;
+      }
+   </script>
+</body>

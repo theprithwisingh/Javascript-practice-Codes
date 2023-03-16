@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 30px;
+      font-weight: 800;
+      text-align: center;
+      border-bottom: 2px solid red;
+      display: inline-block;
+    }
+  </style>
+  <body>
+    <p>manipulate-modify-array</p>
+    <br />
+  </body>
+  <script>
+    var firstArray = ["Prithwi", "singh", 12345];
+    var secondArray = ["Prithwi", "singh", 12345];
+
+    document.write(firstArray.toString()); //toString() - convert an array into the string
+
+    document.write("<br>" + firstArray.join("+")); //join() - combines all array element into a string
+
+    document.write("<br>" + firstArray.concat(secondArray)); //concate
+
+    var veg = ["tomato", "potato", "flower", "banana", "mango", "guava"];
+    veg.push("this is all grosarry"); // push - adds elements to the of array
+    document.write("<br>" + veg);
+
+    const acce = ["laptop", "phone", "earphone", "charger", "keyboard"];
+    acce.pop(); //pop - remove last element of an array
+    document.write("<br>" + acce);
+
+    const removeFirst = ["laptop", "phone", "earphone", "charger", "keyboard"];
+    removeFirst.shift(); // shift- remove the element beginning of an array
+
+    const addbegin = ["laptop", "phone", "earphone", "charger", "keyboard"];
+    addbegin.unshift("mouse"); // unshift-add the element beginning of an array
+    document.write("<br>" + addbegin);
+
+    const months = [ "jan", "march","april","may","june","july","aug"]; 
+    months.splice(1,5,"feb") // splice- [add by index value,removing,items name]
+    document.write("<br>" + months);
+
+
+    const days = ["sun", "mon", "tue","wed","thur","fri","sat"];
+    days.slice((1));
+    document.write("<br>" + days);
+
+
+
+
+
+
+  </script>
+</html>

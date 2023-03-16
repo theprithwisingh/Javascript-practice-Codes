@@ -1,0 +1,177 @@
+<html><head>
+<title>JavaScript Date</title></head><body>
+<p id="demo"></p>
+</body>
+    
+<script type = "text/javascript">
+var dt = new Date();
+document.write("dt.constructor is : " + dt.constructor  + "</br>" ); 
+
+var dt = new Date();
+document.write("Date and Time : " + dt + "</br>" ); 
+
+// Syntax Date.getDate()
+var dt = new Date("December 25, 1995 23:15:00");
+document.write("Date: " + dt.getDate() + "</br> "); 
+         
+
+// syntax Date.getDay()
+var dt =  new Date("December 25, 1995 23:15:00"); // 1 mean monday
+document.write("Day: " + dt.getDay() + "</br> ");// 0-sunday 1-monday 2-tueseday ....
+
+// syntax getFullYears()
+var yt = new Date("October 9, 1999 04:15:00"); 
+document.write( "Year: " + yt.getFullYear() + "</br> ");
+
+
+// Syntax getHours()
+const birthdayTime = new Date("October 9, 1999 06:15:00");
+document.write("Hours: " + birthdayTime.getHours() + "</br> ");
+
+// Syntax getMinutes()
+const getMin = new Date();
+document.write("Minute :" + getMin.getSeconds()+ "</br>");
+
+// Syntax getSeconds()
+const getSec = new Date("October 9, 1999 06:15:45");
+document.write("Second: " + getSec.getSeconds() + "</br>")
+
+
+// Syntax getMilliseconds()
+const milliSec =  new Date("October 9, 1999 06:15:45:123");
+document.write("Milli second :"+ milliSec.getMilliseconds() + "</br>");
+         
+// Syntax getMonth()
+const getMon = new Date("october 9, 1999 06:15:45:123");
+document.write("Month :"+ getMon.getMonth() + "</br>");
+//0-January, 1-February, 2-March, 3-April, 4-May, 5-June, 6-July, 7-August, 8-September, 9-October, 10-November  11-December.
+
+// Syntax getTime()
+const getTime  = new Date("October 9,1999 09:15:45:123");
+document.write("Time :"+ getTime.getTime() + "</br>"); 
+
+const getTimes  = new Date("January 2, 1970 00:00:00");
+document.write("Time :"+ getTimes.getTime() + "</br>"); 
+
+// Syntax getTimezoneOffset()
+const date1 = new Date('August 19, 1975 23:15:30 GMT+07:00');
+const date2 = new Date('August 19, 1975 23:15:30 GMT-02:00');
+
+document.write(date1.getTimezoneOffset() + "</br>");
+// Expected output: your local timezone offset in minutes
+// (e.g., -120). NOT the timezone offset of the date object.
+
+document.write(date1.getTimezoneOffset() === date2.getTimezoneOffset()+ "</br>");
+// Expected output: true 
+
+        
+document.write("</br>")
+
+
+// Syntax getUTCDate()
+const UTCdate =  new Date('August 19, 1975 23:15:30 GMT+07:00');
+// EXPECETED RESULT = 19
+
+// Syntax getUTCDay()
+const UTCday = new Date();
+document.write(UTCday.getUTCDay() +"</br>");
+
+
+// Syntax getUTCFullYear()
+const getFullYear = new Date();
+document.write(getFullYear.getUTCFullYear() + "</br>");
+
+// Syntax getUTCHours()
+const getUTCHour = new Date();
+document.write(getUTCHour.getUTCHours() + "</br>");
+
+//Syntax Date.Now()
+   
+// // Calculate milliseconds in a year
+// const minute = 1000 * 60;
+// const hour = minute * 60;
+// const day = hour * 24;
+// const years = day * 365;
+
+// const myDate = new Date("09/10/1999");
+
+var dob = new Date("09/10/1999");  
+//calculate month difference from current date in time  
+var month_diff =dob.getTime();
+ document.write(dob.getTime());
+ document.write("</br>")
+
+
+
+var dob = new Date("09/10/1999");  
+
+//calculate month difference from current date in time  
+var month_diff = Date.now() - dob.getTime();  
+      
+//convert the calculated difference in date format  
+var age_dt = new Date(month_diff);   
+      
+//extract year from date      
+var year = age_dt.getUTCFullYear();  
+      
+//now calculate the age of the user  
+var age = Math.abs(year - 1970);  
+      
+//display the calculated age  
+document.write("Age of the date entered: " + age + " years");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//document.write(allYear);
+
+
+// Divide Date.now() with a year
+//let years = Math.round(Date.now() / year);
+// let years = Math.round(Date.now() / hour );
+// document.write(years);
+
+
+
+// Syntax setMilliseconds()
+// Syntax setMonth()
+// Syntax setSeconds()
+// Syntax toDateString()
+// Syntax toISOString()
+// Syntax toJSON()
+// Syntax toString()
+// Syntax toTimeString()
+
+         // Syntax valueOf()
+      </script>      
+   </body>
+</html>

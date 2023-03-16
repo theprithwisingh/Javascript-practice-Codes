@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h3>JavaScript Implicit Conversion</h3>
+</body>
+<script>
+    // numeric string used with + gives string type
+let result1;
+
+result1 = '3' + 5; 
+document.write(result1  + "</br>"); // "32"
+
+result1 = '3' + true; 
+document.write(result1  + "</br>"); // "3true"
+
+result1 = '3' + undefined; 
+document.write(result1  + "</br>"); // "3undefined"
+
+result1 = '3' + null; 
+document.write(result1 + "</br>"); // "3null"
+
+// numeric string used with - , / , * results number type
+
+let result2;
+
+result2 = '4' - '2'; 
+document.write(result2 + "</br>"); // 2
+
+result2 = '4' - 2;
+document.write(result2 + "</br>"); // 2
+
+result2 = '4' * 7;
+document.write(result2 + "</br>"); //8
+
+result2 = '4' / 2;
+document.write(result2 + "</br>"); // 2
+
+// non-numeric string used with - , / , * results to NaN
+
+let result3;
+
+result3 = 'hello' - 'world';
+document.write(result3 + "</br>" ); // NaN
+
+result3 = '4' - 'hello';
+document.write(result3 + "</br>"); // NaN
+
+result3 = '4' - ['pritheo','singh',23,'chauhan']
+document.write(result3 + "</br>");
+
+
+
+// if boolean is used, true is 1, false is 0
+let result;
+
+result4 = '4' - true;
+document.write(result4 + "</br>"); // 3
+
+result4 = 4 + true;
+document.write(result4 + "</br>"); // 5
+
+result4 = 4 + false;
+document.write(result4 + "</br>"); // 4
+
+// null is 0 when used with number
+let result5;
+
+result5 = 4 + null;
+document.write(result5 + "</br>");  // 4
+
+result5 = 4 - null;
+document.write(result5 + "</br>");  // 4
+
+// Arithmetic operation of undefined with number, boolean or null gives NaN
+
+let result6;
+
+result6 = 4 + undefined;
+document.write(result6 + "</br>");  // NaN
+
+result6 = '4' - undefined;
+document.write(result6 + "</br>");  // NaN
+
+result6 = true + undefined;
+document.write(result6 + "</br>");  // NaN
+
+result6 = null + undefined;
+document.write(result6 + "</br>");  // NaN
+</script>
+</html>
